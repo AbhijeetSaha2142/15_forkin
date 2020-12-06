@@ -14,9 +14,8 @@ int main()
 
     for (int i = 0; i < n; ++i) // create the children
     {
-        if (f)
+        if (f = fork())
         {
-            f = fork();
             rand(); // to make sure the children don't all get the first rand() value
         } 
         else
